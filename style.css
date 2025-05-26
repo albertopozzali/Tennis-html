@@ -1,0 +1,125 @@
+/* Generale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px; /* Aggiunto margine esterno al body */
+    padding: 0;
+    background-color: #3cb371;
+    color: #333;
+    line-height: 1.6; /* Aumento dell'interlinea per tutto il body */
+}
+
+h1, h2 {
+    text-align: left; /* Cambiato da 'center' a 'left' */
+    margin-left: 20px; /* Aggiunto margine a sinistra */
+    line-height: 1.4; /* Aumentato l'interlinea per i titoli */
+}
+
+/* Header */
+header {
+    position: relative;
+    height: 300px;
+    background-image: url('campo_da_tennis.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Overlay più leggero */
+    z-index: 0;
+}
+
+header h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+    line-height: 1.3; /* Aumentato l'interlinea per l'intestazione */
+}
+
+/* Sezione immagini */
+#immagini {
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Sezioni contenuto */
+section {
+    padding: 2rem;
+    background-color: #f0f9f1;
+    border-left: 8px solid #2e8b57;
+    border-radius: 8px;
+    margin-top: 30px; /* Aggiunto margine tra le sezioni */
+    margin-bottom: 30px; /* Aggiunto margine tra le sezioni */
+    line-height: 1.6; /* Aumento dell'interlinea per il contenuto delle sezioni */
+}
+
+/* NAVIGAZIONE */
+nav {
+    background-color: #1e3d59;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+nav h2 {
+    margin-bottom: 10px;
+    line-height: 1.4; /* Aumento dell'interlinea per il titolo della navigazione */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 8px 0;
+}
+
+nav ul li a {
+    color: #b4e197 ;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* TABELLE */
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 100%; /* Cambiato da 90% a 100% per una larghezza completa */
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #4CAF50;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td img {
+    vertical-align: middle;
+    margin-left: 5px;
+    height: 20px;
+}
+
+footer{
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
